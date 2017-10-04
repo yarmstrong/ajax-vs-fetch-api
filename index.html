@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Number Facts</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <style>
+    #factContainer, #alert {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="card bg-info text-white mt-5 p-4">
+          <h1>Number Facts</h1>
+          <p>Enter a whole number and get a random fact.</p>
+          <input class="form-control form-control-lg" type="number" name="numInput" id="numInput" placeholder="Enter a number...">
+          <span id="alert" class="alert alert-danger" role="alert">
+            Please enter a valid whole number.
+          </span>
+          <div id="factContainer" class="card-body">
+            <h4 class="card-title">Here's your number fact</h4>
+            <p id="factInfo" class="card-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
